@@ -22,10 +22,12 @@
   "content_scripts": [
     {
       "matches": [
-        "https://hangouts.google.com/*/call/*"
+        "https://hangouts.google.com/*/call/*",
+        "https://hangouts.google.com/call/*"
       ],
       "js": [
         "bower_components/jquery/dist/jquery.min.js",
+        "scripts/readouthangouts.js",
         "scripts/config.js",
         "scripts/contentscript.js"
       ],
